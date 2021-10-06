@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" type="image/png" href="image/logo.png"/>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <script src="script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Rubik&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+            <a class="navbar-brand" href="main.html">
+                <img class="img-responsive logo img-fluid" src="image/logo.png" alt="STH">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li><a href="#home">Home</a></li> 
+                    <li><a href="#aboutme">About me</a></li> 
+                    <li><a href="#portfolio">Portfolio</a></li> 
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <img src="image/home.png" class="homebackground" alt="Billede af mig">
+    <div id="home" class="container-fluid">
+        <div class="hometext">HELLO</div>
+        <div class="hometext2">My name is Simone Hansen. I'm a young graphic designer from Denmark and this is my portfolio.</div>
+        <a href="#aboutme"><img src="image/arrow.png" class="arrow" alt="Pil nedaf">
+        </a>
+        <a href="#aboutme"><div class="hometext3">EXPLORE</div>
+        </a>
+    </div>
+    <main>
+        <div id="aboutme" class="container-fluid">
+            <div id="aboutmetext">
+                <p>Hello, my name is Simone.<br> I am a 20-year old girl with a creative mind and a passion for design. I have worked with traditional and digital art for many years, which is what initially sparked my interest for Photoshop and graphic design.</p>
+            </div>
+            <div class="bars">
+                <h2>My qualifications</h2>
+                <img src="image/bars.png">
+            </div>
+            <div class="education">
+                <img src="image/computer.png" alt="Ikon af computer">
+                <img src="image/book.png" alt="Ikon af bog">
+            </div>
+        </div>
+
+        <div id="portfolio" class="container-fluid">
+            <div id="buttons" class="d-flex justify-content-center mb-4">
+                <button class="buttons" onclick="button1()">Semester 1</button>
+                <button class="buttons" onclick="button2()">Semester 2</button>
+                <button class="buttons" onclick="button3(['portfolioimages2','portfolioimages3'])">Semester 3</button>
+            </div>
+            <div id="portfoliodisplay"> 
+                <div id="portfolioimages">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="card">
+                                    <img src="image/placeholder2.png" class="card-img-top"/>
+                                        <div class="card-body">
+                                            <h5 class="card-title">FLOW 1</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, voluptatum!</p>
+                                            <a href="#!" class="btn">SEE THIS PROJECT</a>
+                                        </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 d-none d-lg-block">
+                                <div class="card">
+                                    <img src="image/placeholder.png" class="card-img-top"/>
+                                        <div class="card-body">
+                                            <h5 class="card-title">FLOW 2</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, illum.</p>
+                                            <a href="#!" class="btn">SEE THIS PROJECT</a>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 d-none d-lg-block">
+                                <div class="card">
+                                    <img src="image/placeholder2.png" class="card-img-top"/>
+                                        <div class="card-body">
+                                            <h5 class="card-title">FLOW 3</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, veniam?</p>
+                                            <a href="#!" class="btn">SEE THIS PROJECT</a>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="portfolioimages2">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="card">
+                                    <img src="image/placeholder.png" class="card-img-top"/>
+                                        <div class="card-body">
+                                            <h5 class="card-title">FLOW 1</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                                            <a href="#!" class="btn">SEE THIS PROJECT</a>
+                                        </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 d-none d-lg-block">
+                                <div class="card">
+                                    <img src="image/placeholder2.png" class="card-img-top"/>
+                                        <div class="card-body">
+                                            <h5 class="card-title">FLOW 2</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate molestiae totam perferendis quis eum nulla quae eaque minima ipsum vitae.</p>
+                                            <a href="#!" class="btn">SEE THIS PROJECT</a>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 d-none d-lg-block">
+                                <div class="card">
+                                    <img src="image/placeholder.png" class="card-img-top"/>
+                                        <div class="card-body">
+                                            <h5 class="card-title">FLOW 3</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate molestiae totam perferendis quis eum nulla quae eaque minima ipsum vitae.</p>
+                                            <a href="#!" class="btn">SEE THIS PROJECT</a>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="portfolioimages3">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="card">
+                                    <img src="image/flow1.jpg" class="card-img-top"/>
+                                        <div class="card-body">
+                                            <h5 class="card-title">FLOW 1 - PORTFOLIO PROTOTYPE</h5>
+                                            <p class="card-text">For our first project in semester 1, we had to create a prototype for our first portfolio in Adobe XD.<br> Along with this, we had to write a short description explaining our portfolio.</p>
+                                            <a href="https://xd.adobe.com/view/34aa3255-362b-43c6-b1d9-22497259a9e0-61f9/?fullscreen" class="btn">SEE THIS PROJECT</a>
+                                        </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 d-none d-lg-block">
+                                <div class="card">
+                                    <img src="image/flow2.png" class="card-img-top"/>
+                                        <div class="card-body">
+                                            <h5 class="card-title">FLOW 2 - BUILDING A PORTFOLIO</h5>
+                                            <p class="card-text">For our second project in semester 1, we had to build our first portfolio using HTML and CSS. Along with this, we used Github as a repository for our code.</p>
+                                            <a href="#!" class="btn">SEE THIS PROJECT</a>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 d-none d-lg-block">
+                                <div class="card">
+                                    <img src="image/placeholder.png" class="card-img-top"/>
+                                        <div class="card-body">
+                                            <h5 class="card-title">FLOW 3</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi doloremque laborum, porro facilis ut vero?<br><br> </p>
+                                            <a href="#!" class="btn">SEE THIS PROJECT</a>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div id="contact" class="container-fluid">
+            <div id="contacttext">
+                <h4>CONTACT</h4>
+            </div>
+            <p>You can contact me via:</p>
+            <div id="me">
+                <img src="image/me.png" alt="Billede af mig">
+            </div>
+            <div id="contactinfo">
+                    <p><img src="image/discord.png" class="contact-icon" alt="Discord logo">Siddhartha#5496</p>
+                    <p><img src="image/mail.png" class="contact-icon" alt="Mail ikon">simonethecreator@gmail.com</p>
+                    <p><img src="image/twitter.png" class="contact-icon" alt="Twitter logo">@SimoneReedtz</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
